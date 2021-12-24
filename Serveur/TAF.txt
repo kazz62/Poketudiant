@@ -1,0 +1,18 @@
+Combat rival : => Regler probleme crash apres demande d'attaque
+- Combat en entier
+- deco d'un rival -> victoire de l'autre
+
+Si marche sur joueur en combat -> faire reculer d'une case (evite le multi combat)
+
+
+from socket import error as SocketError
+import errno
+
+try:
+    response = urllib2.urlopen(request).read()
+except SocketError as e:
+    if e.errno != errno.ECONNRESET:
+        raise # Not error we are looking for
+    pass # Handle error here.
+
+a tester pour l'envois de message ? 
